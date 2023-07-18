@@ -1,4 +1,4 @@
-# uptime-kuma-oracle
+# Uptime Kuma Oracle
 Oracle VM.Standard.E2.1.Micro, Ubuntu 22.04
 
 ```shell
