@@ -15,3 +15,8 @@ npm run setup
 npm install pm2 -g && pm2 install pm2-logrotate
 pm2 start server/server.js --name uptime-kuma
 pm2 save && pm2 startup
+
+sudo wget --no-check-certificate https://raw.githubusercontent.com/bibicadotnet/webinoly/master/weby -O weby && sudo chmod +x weby && sudo ./weby -clean
+sudo rm /opt/webinoly/webinoly.conf
+sudo wget --no-check-certificate https://raw.githubusercontent.com/bibicadotnet/Oracle-VM-Standard-A1-Flex-Webinoly/main/vm_standard_a1_flex.conf -O /opt/webinoly/webinoly.conf
+sudo stack -nginx -build=light
